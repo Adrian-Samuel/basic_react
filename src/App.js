@@ -1,12 +1,18 @@
 import React from "react"
 
-const App = () =>{
-    return (
-        <div>
-            <h1> What should a man die</h1>
-        </div>
-    )
+
+const divStyle = {
+    textAlign: 'center'
+}
+
+const ChildApp = () =>{
+    return (<p style={divStyle}>I don't bite, honest!</p>)
+}
+
+const App = () => {
+    return (<div className="header"><h1>Hello World!</h1></div>)
 }
 
 
-export default App
+
+export  {App, ChildApp}

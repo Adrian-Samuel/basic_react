@@ -1,6 +1,10 @@
-import {render} from "react-dom"
-import App from './App'
-import './App'
+import {render} from  "react-dom"
 import React from "react"
+import {App, ChildApp} from "./App"
+import './index.css'
 
-render(<App/>, document.getElementById("root"))
+
+render(<div>
+    <App/>
+    <ChildApp/>
+    </div>, document.getElementById("root"))
